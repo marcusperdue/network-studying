@@ -1,0 +1,71 @@
+.linux-lab { color: var(--text, #e5e9e8); }
+.linux-lab * { box-sizing: border-box; }
+.linux-lab button, .linux-lab input { font: inherit; }
+.linux-lab button { cursor: pointer; }
+.linux-lab button:disabled { cursor: default; }
+.linux-lab button:focus-visible, .linux-lab a:focus-visible, .linux-lab input:focus-visible, .linux-lab summary:focus-visible, .linux-output:focus-visible { outline: 2px solid var(--accent, #c9f66f); outline-offset: 4px; }
+.linux-intro { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 28px; }
+.linux-intro h2 { margin: 8px 0; font-size: clamp(26px, 3vw, 40px); letter-spacing: -1.5px; }
+.linux-eyebrow { color: var(--muted, #8c999b); font: 600 10px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 1.6px; margin: 0 0 10px; }
+.linux-muted { color: var(--muted, #8c999b); line-height: 1.6; font-size: 14px; margin: 8px 0 0; }
+.linux-safe-badge { flex-shrink: 0; color: var(--accent, #c9f66f); border: 1px solid #c9f66f33; border-radius: 6px; padding: 8px 12px; font-size: 11px; }
+.linux-layout { display: grid; grid-template-columns: 228px minmax(0, 1fr); gap: 26px; align-items: start; }
+.linux-sidebar { border: 1px solid var(--border, #2b353b); background: var(--panel, #151c20); border-radius: 10px; padding: 18px 12px; }
+.linux-sidebar > .linux-eyebrow { margin-left: 10px; }
+.linux-mission-list { display: grid; gap: 4px; }
+.linux-mission-button { position: relative; display: flex; flex-direction: column; gap: 5px; width: 100%; text-align: left; padding: 13px 10px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: var(--text, #e5e9e8); transition: background .15s, border-color .15s; }
+.linux-mission-button:hover { background: #ffffff06; border-color: var(--border, #2b353b); }
+.linux-mission-button.linux-mission-active { background: #c9f66f0b; border-color: #c9f66f40; color: var(--accent, #c9f66f); }
+.linux-mission-title { font-size: 12px; font-weight: 600; }
+.linux-mission-meta { color: var(--muted, #8c999b); font-size: 11px; }
+.linux-mission-complete .linux-mission-meta::after { content: ' · ✓ verified'; color: var(--accent, #c9f66f); }
+.linux-reference { border-top: 1px solid var(--border, #2b353b); margin-top: 15px; padding: 16px 8px 2px; font-size: 11px; color: var(--muted, #8c999b); }
+.linux-reference summary { cursor: pointer; }
+.linux-reference-links { display: grid; gap: 10px; margin-top: 14px; }
+.linux-reference a { color: var(--muted, #8c999b); }
+.linux-reference a:hover { color: var(--accent, #c9f66f); }
+.linux-workspace { min-width: 0; }
+.linux-briefing { padding: 23px 26px; border: 1px solid var(--border, #2b353b); background: var(--panel, #151c20); border-radius: 10px; margin-bottom: 18px; }
+.linux-briefing h3, .linux-diagnosis h3 { font-size: 20px; line-height: 1.35; letter-spacing: -.45px; margin: 8px 0 12px; }
+.linux-brief { color: var(--muted, #8c999b); font-size: 13px; line-height: 1.75; max-width: 760px; margin: 0 0 18px; }
+.linux-checklist { list-style: none; padding: 0; margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 12px; color: var(--muted, #8c999b); }
+.linux-checklist .linux-evidence-done { color: var(--accent, #c9f66f); }
+.linux-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.linux-small-button { border: 1px solid var(--border, #2b353b); background: #ffffff04; color: var(--text, #e5e9e8); padding: 8px 12px; border-radius: 5px; font-size: 11px !important; }
+.linux-small-button:hover { border-color: #c9f66775; background: #c9f66f09; }
+.linux-terminal { border: 1px solid #344344; border-radius: 10px; overflow: hidden; background: #0a1113; }
+.linux-terminal-bar { display: flex; gap: 15px; align-items: center; background: #172023; padding: 12px 17px; border-bottom: 1px solid #2b353b; color: #9daaaa; font: 11px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.linux-terminal-dots { color: #516461; letter-spacing: 3px; }
+.linux-terminal-label { margin-left: auto; font-size: 9px; letter-spacing: 1px; color: #6f8181; }
+.linux-output { height: 300px; overflow: auto; padding: 19px 20px 8px; scrollbar-color: #3a4c49 transparent; }
+.linux-output-line { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 0 15px; color: #c1ceca; font: 12px/1.75 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.linux-output-command { color: var(--accent, #c9f66f); }
+.linux-output-welcome, .linux-output-info { color: #98aaa7; }
+.linux-output-hint { color: #eac889; border-left: 2px solid #eac889; padding-left: 12px; }
+.linux-output-error { color: #ed9e90; }
+.linux-command-form { display: flex; align-items: center; gap: 12px; padding: 14px 17px; border-top: 1px solid #243231; }
+.linux-prompt { color: var(--accent, #c9f66f); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.linux-command-input { min-width: 0; flex: 1; color: #e5e9e8; border: 0; padding: 8px 0; background: transparent; outline: none; border-radius: 2px; font: 12px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace !important; }
+.linux-command-input::placeholder { color: #667b76; }
+.linux-run-button { padding: 9px 14px; border: 0; background: var(--accent, #c9f66f); color: #142012; border-radius: 5px; font-size: 11px !important; font-weight: 700 !important; }
+.linux-run-button:hover { filter: brightness(1.07); }
+.linux-terminal-note { margin: 10px 2px 28px; color: var(--muted, #8c999b); font-size: 10px; line-height: 1.6; }
+.linux-diagnosis { border-top: 1px solid var(--border, #2b353b); padding-top: 25px; }
+.linux-diagnosis .linux-muted { font-size: 12px; }
+.linux-answer-list { display: grid; gap: 8px; margin-top: 18px; }
+.linux-answer { display: flex; gap: 14px; align-items: center; text-align: left; background: var(--panel, #151c20); border: 1px solid var(--border, #2b353b); color: var(--text, #e5e9e8); border-radius: 7px; padding: 13px 15px; font-size: 12px !important; line-height: 1.6; }
+.linux-answer-letter { display: grid; place-items: center; flex: 0 0 24px; height: 24px; border: 1px solid var(--border, #2b353b); border-radius: 4px; color: var(--muted, #8c999b); font: 11px ui-monospace, SFMono-Regular, Consolas, monospace; }
+.linux-answer:disabled { opacity: .44; }
+.linux-answer:hover:not(:disabled) { border-color: var(--accent, #c9f66f); }
+.linux-answer.linux-answer-correct { opacity: 1; border-color: #c9f66f85; background: #c9f66f08; }
+.linux-answer.linux-answer-correct .linux-answer-letter { background: var(--accent, #c9f66f); color: #172010; border-color: var(--accent, #c9f66f); }
+.linux-answer.linux-answer-wrong { border-color: #a85a53; }
+.linux-feedback { margin-top: 14px; font-size: 12px; line-height: 1.75; }
+.linux-feedback:empty { display: none; }
+.linux-feedback p { margin: 8px 0 0; }
+.linux-feedback-success { padding: 18px; border-left: 2px solid var(--accent, #c9f66f); background: #c9f66f07; color: #bfccbc; }
+.linux-feedback-success strong { color: var(--accent, #c9f66f); }
+.linux-feedback-error { color: #e8a093; padding: 12px 15px; background: #e8a09307; border-left: 2px solid #e8a093; }
+@media (pointer: coarse) { .linux-command-input { font-size: 16px !important; } }
+@media (max-width: 900px) { .linux-layout { grid-template-columns: 1fr; gap: 20px; } .linux-mission-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .linux-sidebar { padding: 16px; } .linux-reference { margin-top: 10px; } .linux-command-input { font-size: 16px !important; } }
+@media (max-width: 540px) { .linux-intro { align-items: flex-start; flex-direction: column; gap: 12px; } .linux-intro h2 { font-size: 28px; } .linux-briefing { padding: 20px 16px; } .linux-mission-button { padding: 10px 7px; } .linux-mission-title { font-size: 11px; } .linux-checklist { flex-direction: column; } .linux-output { height: 280px; padding: 15px 13px; } .linux-output-line { font-size: 11px; } .linux-terminal-label { display: none; } .linux-command-form { padding: 10px 12px; gap: 8px; } .linux-answer { padding: 12px; gap: 10px; } .linux-answer-letter { flex-basis: 22px; } }

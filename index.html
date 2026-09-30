@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101719">
+  <meta name="description" content="Your data center infrastructure delivery interview training ground. Practice networking, deployment, incident leadership, Linux, and STAR interviews.">
+  <title>Rack Ready — Interview Training Ground</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./linux.css">
+  <link rel="stylesheet" href="./scenarios.css">
+  <script src="./data.js" defer></script>
+  <script src="./linux.js" defer></script>
+  <script src="./scenarios.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to training</a>
+  <aside class="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-mark">▥</span><span>rack<span class="brand-light">ready</span><small>THE INTERVIEW TRAINING GROUND</small></span></a>
+    <div class="nav-label">YOUR WORKSPACE</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom"><div class="connection"><i></i> LOCAL PROGRESS ENABLED</div><p>Small reps. Stronger answers.</p><div class="profile"><span class="avatar">MP</span><div><strong>Your training profile</strong><small id="profile-level">Level 1 · New operator</small></div><span class="profile-dot">●</span></div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><button class="mobile-menu icon-button" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="breadcrumb">Training ground <span>/</span> <strong id="page-name">Overview</strong></div><div class="header-stats"><span id="streak-stat"></span><span class="xp-stat" id="xp-stat">0 XP</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Built for the work. Practiced for the interview.</span><span>Independent study tool · Not affiliated with Amazon or AWS</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>window.addEventListener('error',function(e){if(e.target.tagName==='SCRIPT'){document.getElementById('main').innerHTML='<div class="empty"><h1>A training file could not load.</h1><p>Check your connection and refresh to try again.</p><button onclick="location.reload()">Try again</button></div>'}},true)</script>
+</body>
+</html>
